@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Matchmaking.Coda">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Program" Type="Matchmaking.Program">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.651" Y="0.119" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAgABwAAABEAAEgAAAAAAAAAAAAAAAAAQAg=</HashCode>
+      <FileName>Coda.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Program" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Matchmaking.CsvLettura">
+    <Position X="4.75" Y="4.25" Width="2" />
+    <AssociationLine Name="Program" Type="Matchmaking.Program" ManuallyRouted="true">
+      <Path>
+        <Point X="6.75" Y="5.059" />
+        <Point X="7.75" Y="5.059" />
+        <Point X="7.75" Y="4.373" />
+        <Point X="8.667" Y="4.373" Type="JumpStart" />
+        <Point X="8.833" Y="4.373" Type="JumpEnd" />
+        <Point X="10.195" Y="4.373" />
+        <Point X="10.195" Y="2.838" />
+        <Point X="11.562" Y="2.838" />
+        <Point X="11.562" Y="2.055" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="3.982" Y="2.696" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAEAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>CsvLettura.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Program" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Matchmaking.CsvRiga">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <AssociationLine Name="Coda" Type="Matchmaking.Coda">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.052" Y="0.131" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>CsvRiga.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Coda" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Matchmaking.CsvScrittura">
+    <Position X="4.75" Y="0.5" Width="2.25" />
+    <AssociationLine Name="CsvRiga" Type="Matchmaking.CsvRiga">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.354" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAgAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>CsvScrittura.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CsvRiga" />
+      <Property Name="Coda" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Matchmaking.Giocatore">
+    <Position X="8" Y="4.75" Width="2" />
+    <AssociationLine Name="Program" Type="Matchmaking.Program">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.155" Y="3.865" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Coda" Type="Matchmaking.Coda">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.69" Y="0.672" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAQAAAAAAAIAAAAAAAgAAgACAAIAAgAAAAAEAAAA=</HashCode>
+      <FileName>Giocatore.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Program" />
+      <Property Name="Coda" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Matchmaking.Program">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Matchmaking.Rango">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <AssociationLine Name="Program" Type="Matchmaking.Program">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.907" Y="-1.149" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAAEAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAQAA=</HashCode>
+      <FileName>Rango.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Program" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="System.IO.StreamReader" Collapsed="true">
+    <Position X="5" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.IO.StreamWriter" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Collections.Generic.List&lt;T&gt;" Collapsed="true">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <NestedTypes>
+      <Class Name="System.Collections.Generic.List&lt;T&gt;.Enumerator" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
